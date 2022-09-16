@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<loginall>
+<login>
+    <prefix> Dr. </prefix>
+    <firstname> Kowshik</firstname>
+    <lastname> Harish</lastname>
+    <organization>
+        AVV
+    </organization>
+    <title>
+        Professor
+    </title>
+    <relationship>
+        Student
+    </relationship>
+    <telephone>9876543210</telephone>
+    <email>kowshik@gmail.com</email>
+        <applicantinfo>
+            <academinc_performance>1-2</academinc_performance>
+            <ia>100</ia>
+            <something>50</something>
+            <academinc_performance1>50</academinc_performance1>
+        </applicantinfo>
+    <admitance>YES</admitance>
+    <signature>Kowshik Harish</signature>
+      </login>
+</loginall>

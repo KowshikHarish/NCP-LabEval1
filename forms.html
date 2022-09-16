@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="formstyle.css">
+    <script>
+        function ValidateEmail()
+{
+    let inputText = document.forms["form1"]["email"].value;
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(inputText.match(mailformat))
+{
+alert("Valid email address!");
+return true;
+}
+else if(inputText=="")
+{
+alert("You have entered Nothing in email Forms!");
+return false;
+}
+else
+{
+alert("You have entered an invalid email address!");
+return false;
+}
+}
+    function display() {
+        let inputText = document.forms["form1"]["email"].value;
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        let ap=document.forms["form1"]["optradio1"].value;
+        let ia=document.forms["form1"]["optradio2"].value;
+        let ae=document.forms["form1"]["optradio3"].value;
+        let mp=document.forms["form1"]["optradio4"].value;
+        
+if(inputText.match(mailformat))
+{
+alert("Email:"+inputText+"\nAcademic Performance:"+ap+"\nIntellectual Ability:"+ia+"\nAbility to Express:"+"\nMotivation Proposed:"+mp);
+return true;
+}
+else if(inputText=="")
+{
+alert("Email address is empty");
+return false;
+}
+else
+{
+alert("Invalid Email");
+return false;
+}
+    }
+    </script>
+</head>
+
+<body>
+<form name="form1">
+    <label for="prefix">Prefix</label><br>
+    <select name="prefix" id="prefix">
+      <option value="dr">Dr</option>
+      <option value="mr">Mr</option>
+      <option value="ms">Ms</option>
+      <option value="mrs">Mrs</option>
+    </select><br>
+
+    <label for="fname">First name</label><br>
+    <input type="text" id="fname" name="fname"><br>
+
+    <label for="lname">Last name</label><br>
+    <input type="text" id="lname" name="lname"><br>
+
+    <label for="org">Organisation</label><br>
+    <input type="text" id="org" name="org"><br>
+
+    <label for="title">Title</label><br>
+    <input type="text" id="title" name="title"><br>
+
+    <label for="rtos">Relationship to Student</label><br>
+    <input type="text" id="rtos" name="rtos"><br>
+
+    <label for="tno">Telephone Number</label><br>
+    <input type="text" id="tno" name="tno"><br>
+
+    <label for="email">Email</label><br>
+    <input type="text" id="email" name="email"><br>
+
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Upto 1 to 2%</th>
+                <th>Upper 10%</th>
+                <th>Upper 25%</th>
+                <th>Upper 50%</th>
+                <th>Lower Half</th>
+                <th>No basis for judgement</th>
+            </tr>
+         </thead>
+         <tbody>
+            <form>
+            <tr>
+                <th align="left">Academic Performance</th>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio1" value="Upto 1 to 2%"></label>
+                   </div>
+                </td>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio1" value="Upper 10%" ></label>
+                   </div>
+                </td>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio1" value="Upper 25%"></label>
+                   </div>
+                </td>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio1" value="Upper 50%"></label>
+                   </div>
+                </td>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio1" value="Lower Half"></label>
+                   </div>
+                </td>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio1" value="No basis for judgement"></label>
+                   </div>
+                </td>
+             </tr>
+             <tr>
+                <th align="left">Intellectual Ability</th>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio2"  value="Upto 1 to 2%"></label>
+                   </div>
+                </td>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio2" value="Upper 10%" ></label>
+                   </div>
+                </td>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio2"  value="Upper 25%"></label>
+                   </div>
+                </td>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio2" value="Upper 50%"></label>
+                   </div>
+                </td>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio2" value="Lower Half"></label>
+                   </div>
+                </td>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio2" value="No basis for judgement"></label>
+                   </div>
+                </td>
+             </tr>
+             <tr>
+                <th align="left">Ability to express him or herself</th>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio3"  value="Upto 1 to 2%"></label>
+                   </div>
+                </td>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio3" value="Upper 10%"></label>
+                   </div>
+                </td>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio3" value="Upper 25%"></label>
+                   </div>
+                </td>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio3" value="Upper 50%"></label>
+                   </div>
+                </td>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio3" value="Lower Half"></label>
+                   </div>
+                </td>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio3" value="No basis for judgement"></label>
+                   </div>
+                </td>
+             </tr>
+             <tr>
+                <th align="left">Motivation for proposed field of study</th>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio4"  value="Upto 1 to 2%"></label>
+                   </div>
+                </td>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio4" value="Upper 10%"></label>
+                   </div>
+                </td>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio4" value="Upper 25%"></label>
+                   </div>
+                </td>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio4"  value="Upper 50%"></label>
+                   </div>
+                </td>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio4" value="Lower Half"></label>
+                   </div>
+                </td>
+                <td align="center">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio4" value="No basis for judgement"></label>
+                   </div>
+                </td>
+             </tr>
+             </form>
+         </tbody>
+     </table> <br>  
+     <label for="admit">Would you admit the applicant in your department?</label><br>
+    <input type="radio" id="assuredly" name="admit" value="assuredly">
+    <label for="assuredly">Assuredly</label><br>
+    <input type="radio" id="probably" name="admit" value="probably">
+    <label for="probably">Probably</label><br>
+    <input type="radio" id="possibly" name="admit" value="possibly">
+    <label for="possibly">Possibly</label><br>
+    <input type="radio" id="no" name="admit" value="no">
+    <label for="no">No</label><br>
+
+    <label for="sub">Submission</label><br>
+    <input type="text" id="sub" name="sub"><br><br>
+
+    <button id="sub" onclick="ValidateEmail()">Submit</button>
+    <button id="save" >Save for Later</button>  
+    <button id="disp" onclick="display()">Display</button>
+</form>
+</body>
+</html>
+

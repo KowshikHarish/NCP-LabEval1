@@ -1,0 +1,16 @@
+<!ELEMENT loginall (login+)>
+
+<!ELEMENT login (prefix,firstname,lastname,organization,title,relationship,telephone,email,admitance,signature)>
+<!ELEMENT prefix (Mr.|Ms.|etc.)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT organization (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT relationship (#PCDATA)>
+<!ELEMENT telephone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT applicantinfo (academinc_performance,ia,something,academinc_performance1)>
+<!ELEMENT academinc_performance (#PCDATA)>
+<!ELEMENT ia (#PCDATA)>
+<!ELEMENT something (#PCDATA)>
+<!ELEMENT academinc_performance1 (#PCDATA)>
